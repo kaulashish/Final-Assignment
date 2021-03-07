@@ -4,6 +4,7 @@
 html{
     margin: 60px 40px 0px 40px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     margin: 0;
@@ -189,8 +190,8 @@ header{
     box-sizing: border-box;
     width: 100%;
     height: 100vh;
-    padding-top: 15%;
-    padidng-bottom: 5%; 
+    padding: 15% 7% 0 7%;
+    margin-bottom: 5%;
 }
 
 #services-section h1{
@@ -198,4 +199,91 @@ header{
     font-size: 42px;
     font-weight: 600;
     margin-bottom: 7%;
+}
+
+#services-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    width: 25%;
+    font-size: 18px;
+    color: #919197;
+    font-weight: 300;
+    margin: 0 20px;
+}
+
+.card h2{
+    font-size: 17px;
+    font-weight:600;
+    text-transform: uppercase;
+    color: black;
+}
+
+.card a{
+    color: #919197;
+    font-weight: 500;
+}
+
+#about-section{
+    margin-top: 5%;
+    padding: 0% 7% 7% 7%;
+    box-sizing: border-box;
+}
+
+#about-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#about-container article{
+    padding-left: 100px;
+}
+
+#about-container article h1{
+    font-size: 42px;
+    font-weight: 600;
+}
+
+#about-container article p{
+    color: #919197;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+#about-container article a{
+    color: #919197;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#about-container article a:hover{
+    border-bottom: 1px solid red;
+}
+
+#facts-section{
+    margin-top: 15%;
+    display: flex;
+    flex-direction: row;
+}
+
+.facts-card{
+    width: 25%;
+    padding:0 5%;
+}
+
+.facts-card > div{
+    font-size: 60px;
+    color:#E47312;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.facts-card p{
+    font-size: 17px;
+    font-weight: 300;
+    color: #919197;
 }
