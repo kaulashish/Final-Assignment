@@ -121,6 +121,11 @@ header{
     padding: 15px 25px;
 }
 
+.button:hover{
+    transition: all 0.3s;
+    background-color:#f88723;
+}
+
 #info-wrapper{
     width: 1000px;
     background-color: #e47312;
