@@ -58,7 +58,7 @@ header{
     align-items: center;
 }
 
-#header-links a{
+.link{
     color:#414147;
     font-weight: 700;
     font-size: 12px;
@@ -67,7 +67,7 @@ header{
     letter-spacing: 1px;
 }
 
-#header-links a:hover{
+.link:hover{
     transition: all 0.3s;
     color:#E47312;
 }
@@ -80,15 +80,19 @@ header{
 
 #get-quote{
     text-transform: uppercase;
-    color: white;
     background-color:#E47312;
-    /* height: 100%; */
-    /* padding: 0 50px; */
-    /* margin-left: 20px; */
+    padding: 32px 40px;
+    margin-left: 20px;
     height: 20%;
     font-weight:600;
     display: flex;
     align-items: center;
+    color: white;
+}
+
+#get-quote:hover{
+    transition: all 0.3s;
+    background-color:#f88723;
 }
 
 #landing-section-content{
