@@ -47,7 +47,7 @@ header{
 }
 
 #logo{
-    width: 15%;
+    max-width: 100%;
     height: auto;
     background-color: #E47312;
     padding: 45px 35px;
@@ -59,13 +59,15 @@ header{
 }
 
 .link{
+    width: 50px;
     color:#414147;
     font-weight: 700;
     font-size: 12px;
-    padding: 32px 14px;  
+    padding: 33px 14px;  
     text-transform: uppercase; 
     letter-spacing: 1px;
     transition: all 0.3s;
+    text-align: center;
 }
 
 .link:hover{
@@ -81,11 +83,14 @@ header{
 #get-quote{
     text-transform: uppercase;
     background-color:#E47312;
-    padding: 32px 40px;
+    padding: 34px 28px 31px;
     margin-left: 20px;
     height: 20%;
+    width: 110px;
     font-weight:600;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     color: white;
     transition: all 0.3s;
@@ -230,7 +235,6 @@ header{
     margin-top: 5%;
     padding: 5% 7% 7% 7%;
     box-sizing: border-box;
-    background-attachment: scroll, fixed;
 }
 
 #about-container{
@@ -238,7 +242,16 @@ header{
     flex-direction: row;
 }
 
+#img-container{
+    width: 50%;
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/serv-1.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: scroll, fixed;
+}
+
 #about-container article{
+    width: 50%;
     padding-left: 100px;
 }
 
@@ -286,10 +299,6 @@ header{
     font-size: 17px;
     font-weight: 300;
     color: #919197;
-}
-
-#projects-section{
-    margin-top: 5%;
 }
 
 #projects-heading{
@@ -362,7 +371,7 @@ header{
     opacity: 1;
 }
 
-#get-intouch-section{
+#orange-section{
     text-align: center;
     font-size: 17px;
     font-weight: 400;
@@ -376,14 +385,21 @@ header{
     margin-bottom: 20px;
 }
 
-#get-intouch-section h1{
+#orange-section h1{
     font-size: 40px;
     text-transform: uppercase;
     font-weight:600;
+    margin-bottom: 0;
 }
 
-#get-intouch-section a{
+#orange-section p{
+    margin-top: 0;
+    font-weight: 300;
+}
+
+#orange-section a{
+    margin-top: 50px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     color: white
 }
