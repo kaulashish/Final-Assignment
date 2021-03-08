@@ -65,10 +65,10 @@ header{
     padding: 32px 14px;  
     text-transform: uppercase; 
     letter-spacing: 1px;
+    transition: all 0.3s;
 }
 
 .link:hover{
-    transition: all 0.3s;
     color:#E47312;
 }
 
@@ -88,10 +88,10 @@ header{
     display: flex;
     align-items: center;
     color: white;
+    transition: all 0.3s;
 }
 
 #get-quote:hover{
-    transition: all 0.3s;
     background-color:#f88723;
 }
 
@@ -119,10 +119,10 @@ header{
     font-size: 12px;
     font-weight: 600;
     padding: 15px 25px;
+    transition: all 0.3s;
 }
 
 .button:hover{
-    transition: all 0.3s;
     background-color:#f88723;
 }
 
@@ -161,9 +161,9 @@ header{
 
 .info-item a{
     color: white;
+    transition: all 1s;
 }
 .info-item a:hover{
-    transition: all 1s;
     border-bottom: 1px solid white;
 }
 
@@ -191,7 +191,6 @@ header{
     width: 100%;
     height: 100vh;
     padding: 15% 7% 0 7%;
-    margin-bottom: 5%;
 }
 
 #services-section h1{
@@ -229,8 +228,9 @@ header{
 
 #about-section{
     margin-top: 5%;
-    padding: 0% 7% 7% 7%;
+    padding: 5% 7% 7% 7%;
     box-sizing: border-box;
+    background-attachment: scroll, fixed;
 }
 
 #about-container{
@@ -265,7 +265,7 @@ header{
 }
 
 #facts-section{
-    margin-top: 15%;
+    margin-top: 10%;
     display: flex;
     flex-direction: row;
 }
@@ -286,4 +286,104 @@ header{
     font-size: 17px;
     font-weight: 300;
     color: #919197;
+}
+
+#projects-section{
+    margin-top: 5%;
+}
+
+#projects-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 10%;
+}
+
+#projects-heading h1{
+    margin: 0;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+#projects-heading a{
+    color: #919197;
+    transition: 0.2s;
+}
+#projects-heading a:hover{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #E47312;
+}
+
+#projects-showcases{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-item{
+    box-sizing: border-box;
+    width: 33.33333333%;
+    padding: 20px;
+}
+
+.project-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.project-overlay{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0,0,0,0.3);
+    transition: 0.2s;
+    opacity: 0%;
+}
+
+.view-proj-icon{
+    box-sizing: border-box;
+    font-size: 17px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 30px 25px;
+    background-image: linear-gradient(186deg, #e47312, #ff6361);
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+}
+
+.project-overlay:hover{
+    opacity: 1;
+}
+
+#get-intouch-section{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    box-sizing: border-box;
+    padding: 5% 5%;
+    color: white;
+    background-image: linear-gradient(72deg, #e47312, rgba(255, 99, 97, 0.78)), url(https://nuuk-e3eaa.firebaseapp.com/assets/img/banner-2.jpg);
+    background-position: 0px 0px, 50% 50%;
+    background-size: cover;
+    background-attachment: scroll, fixed;
+    margin-bottom: 20px;
+}
+
+#get-intouch-section h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight:600;
+}
+
+#get-intouch-section a{
+    font-size: 14px;
+    font-weight: 600;
+    color: white
 }
