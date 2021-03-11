@@ -2,7 +2,7 @@
 
 
 html{
-    margin: 60px 40px 0px 40px;
+    margin: 60px 40px 40px 40px;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -68,29 +68,27 @@ header{
     transition: all 0.3s;
     text-align: center;
     position: relative;
+    z-index: 1;
 }
 
 .link::before{
     content: '';
     background:#E47312;
-    width: 2px;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    height:0;
-
-}
-/* .link::after{
-    content: '';
-    background:#E47312;
     width: 1px;
     position: absolute;
-    bottom: 0%;
-    left: 0%;
+    top: 0%;
+    left: 50%;
     right: 0%;
-    height:0;
-} */
+    bottom: 0%;
+    transform: scaleY(0);
+    transition: all 0.5s;
+}
+
+.link::before:hover{
+    transform: scaleY(1);
+    z-index: 1;
+}
+
 
 .link:hover{
     color:#E47312;
@@ -530,7 +528,7 @@ header{
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
-    padding: 5% 7% 7% 7%;
+    padding: 5% 7% 0 7%;
     display: flex;
     z-index: 50;
 }
@@ -624,4 +622,282 @@ header{
     font-size:17px;
     color:#919197;
     font-weight: 400;
+}
+
+#blog-section{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 5% 7% 0 7%;
+}
+
+#blog-section h1{
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.blog-wrapper{
+    display: flex;
+}
+
+.blog-container-card{
+    box-sizing: border-box;
+    width: 30%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    background-image: linear-gradient(90deg, #e47312, #ff6361);
+}
+
+.blog-image{
+    max-width: 100%;
+}
+
+.blog-img-wrapper{
+    position: relative;
+}
+
+.meta-number{
+    width: 70px;
+    height: 70px;
+    background-image: linear-gradient(45deg, #ff6361, #e47312);
+    color: #fff;
+    font-size: 26px;
+    font-weight: 400;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meta-month{
+    width: 70px;
+    height: 40px;
+    background-color: #fff;
+    color: #9d9da5;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 70px;    
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-content{
+    padding: 25px 56px 25px 30px;
+    background-color: #e47312;
+    background-image: linear-gradient(158deg, #e47312, #ff6361);
+    color: white;
+}
+
+.blog-content h2{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.blog-text{
+    font-size: 17px;
+    font-weight: 300;
+    color: hsla(0, 0%, 100%, 0.7);
+}
+
+.read-more{
+    text-transform: uppercase;
+    padding-bottom: 2px;
+    font-weight:600;
+    font-size: 14px;
+    position: relative;
+}
+
+.read-more::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: hsla(0, 0%, 100%, 0.7);
+    left: 0;
+    bottom: 0;
+}
+
+.read-more:hover::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+}
+
+/* https://nuuk-e3eaa.firebaseapp.com/assets/img/logo-1w.png */
+
+#logo-section{
+    margin-top: 5%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3% 0;
+    background-image: linear-gradient(56deg, #e47312, #ff6361);
+    color: white;
+}
+
+#logo-wrapper{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-wrapper h1{
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#logo1{
+    background-image: url('https://nuuk-e3eaa.firebaseapp.com/assets/img/logo-1w.png');
+    width: 20%;
+    min-height: 100px;
+    background-color: transparent;
+    background-position: 50% 50%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+#logo2{
+    width: 20%;
+    min-height: 100px;
+    background-image: url("https://nuuk-e3eaa.firebaseapp.com/assets/img/logo-2w.png");
+    background-color: transparent;
+    background-position: 50% 50%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+#logo3{
+    width: 20%;
+    min-height: 100px;
+    background-image: url("https://nuuk-e3eaa.firebaseapp.com/assets/img/logo-3w.png");
+    background-color: transparent;
+    background-position: 50% 50%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+#logo4{
+    width: 20%;
+    min-height: 100px;
+    background-image: url("https://nuuk-e3eaa.firebaseapp.com/assets/img/logo-4w.png");
+    background-color: transparent;
+    background-position: 50% 50%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+#logo5{
+    width: 20%;
+    min-height: 100px;
+    background-image: url("https://nuuk-e3eaa.firebaseapp.com/assets/img/logo-5w.png");
+    background-color: transparent;
+    background-position: 50% 50%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+
+footer{
+    box-sizing: border-box;
+    background-color: #0a1229;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 70px 50px 0 50px;
+    border: 1px solid #2f3038;
+}
+
+#footer-content-wrapper{
+    display: flex;
+    box-sizing: border-box;
+}
+
+.footer-column{
+    box-sizing: border-box;
+    width: 33.33333%;
+    color: white;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column h1{
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.footer-heading::after{
+    content:"";
+    position: absolute;
+    background-color: #E47312;
+    height: 1px;
+    width: 60%;
+    top: 9px;
+    right: 50px;
+}
+
+.para{
+    font-size: 18px;
+    font-weight:200;
+}
+
+.find-on-map{
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight:600;
+}
+
+#services-links{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+#services-links p{
+    color: white;
+    margin-bottom: 0;
+}
+
+#footer-logo{
+    max-width: 100%;
+    height: auto;
+    background-color: #E47312;
+    display: inline-block;
+}
+
+.contact-info-item h1{
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.contact-info-item i{
+    font-size: 20px;
+}
+
+.contact-info-item p{
+    font-size: 18px;
+    font-weight: 200;
+    margin: 10px 0;
+    margin-left: 40px;
 }
