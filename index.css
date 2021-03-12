@@ -31,6 +31,7 @@ a{
     background-attachment: scroll, fixed;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 header{
@@ -120,6 +121,10 @@ header{
     background-color:#f88723;
 }
 
+#sidebar{
+    display: none;
+}
+
 #landing-section-content{
     color: white;
     width: 60%;
@@ -129,7 +134,6 @@ header{
     position: absolute;
     top: 40%;
     left: 10%;
-    /* bottom: 0; */
 }
 
 #landing-section-content h1{
@@ -177,7 +181,6 @@ header{
 
 .info-item i{
     font-size: 24px;
-    /* margin-bottom: 15px; */
 }
 
 .info-item p{
@@ -218,11 +221,22 @@ header{
     padding: 15% 7% 0 7%;
 }
 
+#services-section > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7%;
+}
+
+#services-section > div > a{
+    color:#919197;
+    position: relative;
+}
+
 #services-section h1{
     margin: 0;
     font-size: 42px;
     font-weight: 600;
-    margin-bottom: 7%;
 }
 
 #services-cards{
@@ -268,6 +282,10 @@ header{
     background-size: cover;
     background-position: top;
     background-attachment: scroll, fixed;
+}
+
+#img-container > img{
+    display: none;
 }
 
 #about-container article{
@@ -415,6 +433,7 @@ header{
 #orange-section p{
     margin-top: 0;
     font-weight: 300;
+    font-size: 17px;
 }
 
 #orange-section a{
@@ -447,11 +466,9 @@ header{
 }
 
 .staff-content{
-    /* min-width: 200px; */
     width: 25%;
     box-sizing: border-box;
     position: relative;
-    /* border: 1px solid #ccc; */
     padding: 0 10px;
 }
 
@@ -738,8 +755,6 @@ header{
     bottom: 0;
 }
 
-/* https://nuuk-e3eaa.firebaseapp.com/assets/img/logo-1w.png */
-
 #logo-section{
     margin-top: 5%;
     width: 100%;
@@ -758,11 +773,15 @@ header{
     align-items: center;
 }
 
-#logo-wrapper h1{
+#logo-wrapper-title{
     font-size: 18px;
     line-height: 20px;
     text-transform: uppercase;
     font-weight: 500;
+}
+
+#logo-section > h1{
+    display: none;
 }
 
 #logo1{
@@ -830,7 +849,7 @@ footer{
     box-sizing: border-box;
     width: 33.33333%;
     color: white;
-    padding: 0 10px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
 }
@@ -849,9 +868,9 @@ footer{
     position: absolute;
     background-color: #E47312;
     height: 1px;
-    width: 60%;
+    min-width: 60%;
     top: 9px;
-    right: 50px;
+    right: 5%;
 }
 
 .para{
