@@ -88,6 +88,9 @@
         box-sizing: border-box;
         align-items: center;
         margin: 0;
+        margin-bottom: 5%;
+        position: absolute;
+        right: 0; 
     }
 
     #services-section{
@@ -533,6 +536,6 @@
         height: 1px;
         min-width: 40%;
         top: 9px;
-        right: 30%;
+        right: 1%;
     }
 }
