@@ -74,22 +74,35 @@ header{
 
 .link::before{
     content: '';
-    background:#E47312;
-    width: 1px;
     position: absolute;
-    top: 0%;
-    left: 50%;
-    right: 0%;
-    bottom: 0%;
-    transform: scaleY(0);
-    transition: all 0.5s;
+    top: 0;
+    right: 50%;
+    width: 1px;
+    height: 0;
+    background-color: #e47312;
+    transition: height 0.2s;
+    transition-timing-function: ease-in-out;
 }
 
-.link::before:hover{
-    transform: scaleY(1);
-    z-index: 1;
+.link:hover::before{
+    height: 30px;
 }
 
+.link::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 1px;
+    height: 0;
+    background-color: #e47312;
+    transition: height 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.link:hover::after{
+    height: 30px;
+}
 
 .link:hover{
     color:#E47312;
@@ -855,6 +868,7 @@ footer{
 }
 
 .footer-column h1{
+    background-color: #0a1229;
     text-transform: uppercase;
     font-size: 18px;
     line-height: 20px;
@@ -865,12 +879,20 @@ footer{
 
 .footer-heading::after{
     content:"";
+    display: block;
     position: absolute;
+    top: 50%;
+    right: 0;
     background-color: #E47312;
     height: 1px;
-    min-width: 60%;
-    top: 9px;
-    right: 5%;
+    width: 60%;
+}
+
+span{
+    padding: 10px;
+    background-color: #0a1229;
+    position: relative;
+    z-index: 1;
 }
 
 .para{

@@ -218,12 +218,14 @@
     .footer-heading::after{
         content:"";
         position: absolute;
+        top: 50%;
+        right: 0;
+        display: block;
         background-color: #E47312;
         height: 1px;
-        min-width: 40%;
-        top: 9px;
-        right: 1%;
+        min-width: 60%;
     }
+    
 }
 
 
@@ -534,8 +536,9 @@
         position: absolute;
         background-color: #E47312;
         height: 1px;
-        min-width: 40%;
-        top: 9px;
-        right: 1%;
+        min-width: 60%;
+        right: 0;
+        top: 50%;
+        /* z-index: -1; */
     }
 }
